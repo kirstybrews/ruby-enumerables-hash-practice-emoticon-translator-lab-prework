@@ -11,8 +11,10 @@ def load_library(yaml_file)
   end
 end
 
-def get_japanese_emoticon()
-  # code goes here
+def get_japanese_emoticon(yaml_file, emoticon)
+  yaml_file = load_library(yaml_file)
+  yaml_file.each do |key, value|
+    
 end
 
 def get_english_meaning
