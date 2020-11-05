@@ -22,7 +22,7 @@ def get_japanese_emoticon(yaml_file, emoticon)
   end
 end
 
-def get_english_meaning
+def get_english_meaning(yaml_file, emoticon)
   yaml_file = load_library(yaml_file)
   yaml_file.each_value do |value|
     if value[:japanese] == emoticon
