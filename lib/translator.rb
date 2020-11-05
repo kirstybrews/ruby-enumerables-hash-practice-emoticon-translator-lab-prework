@@ -17,9 +17,10 @@ def get_japanese_emoticon(yaml_file, emoticon)
     binding.pry
     if value[:english] == emoticon
       return value[:japanese]
-    else
-      return 'Sorry, that emoticon was not found'
     end
+  end
+  if !emoticon
+    return 'Sorry, that emoticon was not found'
   end
 end
 
